@@ -5,8 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * *'  # 每天运行一次
-
+    - cron: '0 16 * * *' #北京时间0:00执行(UTC+8 16:00)
 jobs:
   fetch-and-email:
     runs-on: ubuntu-latest
